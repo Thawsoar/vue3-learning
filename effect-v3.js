@@ -46,4 +46,6 @@ effect(() => {
 setTimeout(() => {
 	obj.notExist = 'hello vue3'
   obj.text = 'update text'
+  // 分支切换触发了不必要的副作用函数 需要进行cleanup
+  obj.text = obj.ok ? obj.text : 'not'
 }, 1000)

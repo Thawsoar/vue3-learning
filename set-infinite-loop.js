@@ -20,3 +20,4 @@ newSet.forEach(item => {
   set.add(1)
   console.log('遍历中') 
 })
+
